@@ -307,9 +307,7 @@ ORDER BY cnt DESC
 ```
 
 # 2️⃣ 학습 인증란
-
-![alt text](image.png)
-
+![SQL 2주차 학습인증](image-1.png)
 
 
 <br><br>
