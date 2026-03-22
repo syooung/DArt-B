@@ -446,7 +446,7 @@ ORDER BY (ㄱ) (ㄹ);
 
 
 ~~~
-ㄱ. attack
+ㄱ. AVG(attack)
 ㄴ. WHERE
 ㄷ. GROUP BY
 ㄹ. DESC
