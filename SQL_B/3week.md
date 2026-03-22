@@ -400,7 +400,7 @@ WHERE
 ### 생산성 도구
 **Espanso**  
 핵심 로직:특정 단어 감지되면 정의된 것으로 바꾼다!  
-![실습인증](image.png)
+![alt text](image.png)
 
 <br>
 <br>
@@ -409,7 +409,7 @@ WHERE
 
 # 2️⃣ 학습 인증란
 
-![alt text](image-2.png) 
+![alt text](image-1.png)
 
 
 
