@@ -146,9 +146,9 @@ LIMIT 숫자
 
 ```
 여기에 답을 적어주세요!
-(ㄱ) AVG
-(ㄴ) MIN
-(ㄷ) COUNT
+(ㄱ) AVG()
+(ㄴ) MIN()
+(ㄷ) COUNT()
 (ㄹ) COUNT(DISTINCT)
 ```
 
