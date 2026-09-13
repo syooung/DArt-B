@@ -158,7 +158,6 @@ FROM <첫 번째 테이블(LEFT 테이블)>
 ![alt text](<SQL 3주차 5.png>)
 
 ![alt text](<SQL 3주차 6.png>)
-
 <!-- 두 테이블을 묶는 조인에 관해 배우게 된 점을 적어주세요. -->
 <!-- 과제 설명 예시처럼 직접 실습 후 인증 사진 4장 이상을 첨부해주세요. -->
 
@@ -312,7 +311,7 @@ INSERT INTO orders VALUES
 1. **데이터 형식 변환**
    - orders 테이블의 `order_date_str`을 DATE 형식으로 변환하여 조회하시오.
    (힌트: STR_TO_DATE 사용)
-   ![alt text](<SQL 3주차 7.png>)
+  ![alt text](<SQL 3주차 7.png>)
 
 2. **데이터 형식 변환**
    - orders 테이블의 `amount_str`을 숫자형으로 변환하여 조회하시오.
@@ -333,7 +332,8 @@ INSERT INTO orders VALUES
      그렇지 않으면 '일반 주문'을 출력하는
      프로시저를 생성하시오.
    - 생성 후 CALL로 실행 결과를 확인하시오.
-   ![alt text](<SQL 3주차 11.png>)![alt text](<SQL 3주차 12.png>)
+   ![alt text](<SQL 3주차 11.png>)
+   ![alt text](<SQL 3주차 12.png>)
 <!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
 
 
