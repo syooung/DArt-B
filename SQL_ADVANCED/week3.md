@@ -95,7 +95,7 @@ CAST ( 값 AS 데이터_형식 [ (길이) ] )
 CONVERT ( 값, 데이터_형식 [ (길이) ] ) 
 ```
 
-![alt text](<SQL 3주차 1.png>)
+![alt text](<SQL 3주차 01.png>)
 <!-- MySQL의 데이터 형식에 관해 배우게 된 점을 적어주세요. -->
 <!-- 과제 설명 예시처럼 직접 실습 후 사진 한 장 이상을 첨부해주세요. -->  
 
@@ -129,17 +129,17 @@ FROM <첫 번째 테이블>
      ON <조인될 조건>
 [WHERE 검색 조건]
 ```
-![alt text](<SQL 3주차 2.png>)
+![alt text](<SQL 3주차 02.png>)
 
 **내부 조인의 간결한 표현**   
 &rarr; 필요한 아이디/이름/구매 물품/주소/연락처만 추출
 
-![alt text](<SQL 3주차 3.png>)
+![alt text](<SQL 3주차 03.png>)
 
 **내부 조인의 활용**
 &rarr; ***전체 회원의*** 아이디/이름/구매 물품/주소 출력
 
-![alt text](<SQL 3주차 4.png>)
+![alt text](<SQL 3주차 04.png>)
 
 **=> 내부 조인은 두 테이블에 모두 있는 내용만 조인되는 방식임. 만약, 양쪽 중에 한곳이라도 내용이 있을 때 조인하려면 외부 조인을 사용해야 함**
 
@@ -155,9 +155,9 @@ FROM <첫 번째 테이블(LEFT 테이블)>
     ON <조인될 조건>
 [WHERE 검색 조건] ;
 ```
-![alt text](<SQL 3주차 5.png>)
+![alt text](<SQL 3주차 05.png>)
 
-![alt text](<SQL 3주차 6.png>)
+![alt text](<SQL 3주차 06.png>)
 <!-- 두 테이블을 묶는 조인에 관해 배우게 된 점을 적어주세요. -->
 <!-- 과제 설명 예시처럼 직접 실습 후 인증 사진 4장 이상을 첨부해주세요. -->
 
@@ -311,16 +311,16 @@ INSERT INTO orders VALUES
 1. **데이터 형식 변환**
    - orders 테이블의 `order_date_str`을 DATE 형식으로 변환하여 조회하시오.
    (힌트: STR_TO_DATE 사용)
-  ![alt text](<SQL 3주차 7.png>)
+![alt text](<SQL 3주차 07.png>)
 
 2. **데이터 형식 변환**
    - orders 테이블의 `amount_str`을 숫자형으로 변환하여 조회하시오.
-![alt text](<SQL 3주차 8.png>)
+![alt text](<SQL 3주차 08.png>)
 
 3. **내부 조인 (INNER JOIN)**
    - customers와 orders를 customer_id 기준으로 내부 조인하여
      고객 이름(name)과 주문 번호(order_id)를 함께 조회하시오.
-![alt text](<SQL 3주차 9.png>)
+![alt text](<SQL 3주차 09.png>)
 
 4. **외부 조인 (LEFT JOIN)**
    - customers를 기준으로 LEFT JOIN을 수행하여,
@@ -332,8 +332,8 @@ INSERT INTO orders VALUES
      그렇지 않으면 '일반 주문'을 출력하는
      프로시저를 생성하시오.
    - 생성 후 CALL로 실행 결과를 확인하시오.
-   ![alt text](<SQL 3주차 11-1.png>)
-   ![alt text](<SQL 3주차 12-1.png>)
+  ![alt text](<SQL 3주차 11.png>)
+![alt text](<SQL 3주차 12.png>)
 <!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
 
 
