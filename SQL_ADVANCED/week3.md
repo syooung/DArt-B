@@ -333,7 +333,7 @@ INSERT INTO orders VALUES
      프로시저를 생성하시오.
    - 생성 후 CALL로 실행 결과를 확인하시오.
    ![alt text](<SQL 3주차 11-1.png>)
-   ![alt text](<SQL 3주차 12.png>)
+   ![alt text](<SQL 3주차 12-1.png>)
 <!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
 
 
