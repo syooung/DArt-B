@@ -110,7 +110,7 @@ Tableau 화면을 캡처하여 개인 레포의 이미지 폴더에 업로드하
 이후 그룹별 주문량을 막대그래프로 표현해주세요. 주문량은 `주문 Id`의 카운트로 계산합니다.
 
 
-☑️ **그룹 생성 과정:** 데이터 창에서 '계산된 필드 만들기'를 선택하여 필드명을 'Product Name Group'으로 입력 ➡️ STARTSWITH 함수(또는 CONTAINS 함수)와 IF문 조건식을 활용해 제품 이름에 삼성, Apple, Canon이 포함된 제품을 각각 'Samsung group', 'Apple group', 'Canon group'으로 그룹화하고, 나머지는 '기타'로 분류하는 계산식을 작성함.   
+☑️ **그룹 생성 과정:** 데이터 창에서 '계산된 필드 만들기'를 선택하여 필드명을 'Product Name Group'으로 입력 ➡️ STARTSWITH 함수와 IF문 조건식을 활용해 제품 이름에 삼성, Apple, Canon이 포함된 제품을 각각 'Samsung group', 'Apple group', 'Canon group'으로 그룹화하고, 나머지는 '기타'로 분류하는 계산식을 작성함.   
 
 ☑️ **사용한 필드:** `Product Name Group`, `주문 Id (카운트 고유)`  
 
