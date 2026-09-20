@@ -242,6 +242,16 @@ USE week4_db;
 - signup_date는 DATE 타입으로 설정합니다.
 - grade는 INT이며 기본값(Default)을 1로 설정합니다.
 ```
+```sql
+CREATE TABLE users (
+  user_id     INT PRIMARY KEY,
+  name        VARCHAR(20) NOT NULL,
+  email       VARCHAR(50) UNIQUE,
+  signup_date DATE,
+  grade       INT DEFAULT 1
+);
+DESCRIBE users;
+```
 
 ![alt text](<images/SQL 4주차 1.png>)
 ### 💡 2. 다음 조건을 만족하는 `orders` 테이블을 생성하시오.
@@ -251,6 +261,15 @@ USE week4_db;
 - amount는 INT이며 0보다 커야 합니다.
 - order_date는 DATE 타입으로 설정합니다.
 ```
+```sql
+CREATE TABLE orders (
+  order_id   INT PRIMARY KEY,
+  user_id    INT NOT NULL,
+  amount     INT CHECK (amount > 0),
+  order_date DATE
+);
+DESCRIBE orders;
+```
 
 ![alt text](<images/SQL 4주차 2.png>)
 
@@ -259,16 +278,40 @@ USE week4_db;
 - users 테이블에 3명 이상의 데이터를 직접 INSERT 하시오. (단, user 중 본인이 포함돼야 함)
 - orders 테이블에 3건 이상의 데이터를 직접 INSERT 하시오.
 ```
+```sql
+INSERT INTO users VALUES (1, '강신영', 'shinyoung@example.com', '2026-09-01', 1);
+INSERT INTO users VALUES (2, '김철수', 'chulsoo@example.com', '2026-09-05', 2);
+INSERT INTO users VALUES (3, '이영희', 'younghee@example.com', '2026-09-10', 1);
+
+INSERT INTO orders VALUES (101, 1, 15000, '2026-09-12');
+INSERT INTO orders VALUES (102, 2, 32000, '2026-09-13');
+INSERT INTO orders VALUES (103, 1, 8000,  '2026-09-15');
+INSERT INTO orders VALUES (104, 3, 21000, '2026-09-18');
+
+SELECT * FROM users;
+SELECT * FROM orders;
+```
+
 ![alt text](<images/SQL 4주차 3.png>)
 ![alt text](<images/SQL 4주차 4.png>)
+
 ### 💡 4. users와 orders 테이블을 활용하여 다음 컬럼을 보여주는 뷰 user_order_view를 생성하시오.
 ```
 - user_id
 - name
 - amount
 ```
+```sql
+CREATE VIEW user_order_view AS
+SELECT u.user_id, u.name, o.amount
+FROM users u
+INNER JOIN orders o ON u.user_id = o.user_id;
+```
 
 ### 💡 5. 생성한 user_order_view를 조회하시오.
+```sql
+SELECT * FROM user_order_view;
+```
 
 ![alt text](<images/SQL 4주차 5.png>)
 
